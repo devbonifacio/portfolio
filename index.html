@@ -16,12 +16,18 @@
   <!-- NAV -->
   <nav>
     <span class="nav-logo">BJ<span class="dot">.</span></span>
-    <ul class="nav-links">
+  
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      ☰
+    </button>
+  
+    <ul class="nav-links" id="navLinks">
       <li><a href="#about" data-pt="sobre" data-en="about">sobre</a></li>
       <li><a href="#skills">skills</a></li>
       <li><a href="#projects" data-pt="projetos" data-en="projects">projetos</a></li>
       <li><a href="#contact" data-pt="contato" data-en="contact">contato</a></li>
     </ul>
+  
     <button class="lang-toggle" id="langToggle">
       <span class="lang-option" id="langPT">PT</span>
       <span class="lang-sep">/</span>
@@ -108,24 +114,51 @@
   <!-- PROJECTS -->
   <section id="projects">
     <div class="section-tag mono" data-pt="03 / projetos" data-en="03 / projects">03 / projetos</div>
-    <h2 data-pt="Em<br><em>construção</em>." data-en="Work in<br><em>progress</em>.">Em<br><em>construção</em>.</h2>
-    <div class="projects-placeholder">
-      <div class="placeholder-card">
-        <span class="mono" data-pt="Projeto_01" data-en="Project_01">Projeto_01</span>
-        <p data-pt="Em breve — algo incrível está sendo construído." data-en="Coming soon — something cool is being built.">Em breve — algo incrível está sendo construído.</p>
+    <h2 data-pt="Projetos<br><em>reais</em>." data-en="Real<br><em>projects</em>.">Projetos<br><em>reais</em>.</h2>
+  
+    <div class="projects-grid">
+      <article class="project-card">
+        <span class="mono" data-pt="Projeto em destaque" data-en="Featured project">Projeto em destaque</span>
+        <h3>Portfolio Website</h3>
+        <p
+          data-pt="Meu portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro, com suporte a dois idiomas, animações e design responsivo."
+          data-en="My personal portfolio built with pure HTML, CSS and JavaScript, featuring bilingual support, animations and responsive design."
+        >
+          Meu portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro, com suporte a dois idiomas, animações e design responsivo.
+        </p>
+  
+        <div class="tag-row">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+  
+        <div class="project-links">
+          <a href="https://github.com/devbonifacio" target="_blank" class="project-btn">GitHub</a>
+          <a href="#" class="project-btn ghost" data-pt="Live Demo" data-en="Live Demo">Live Demo</a>
+        </div>
+      </article>
+  
+      <article class="project-card">
+        <span class="mono" data-pt="Próximo projeto" data-en="Next project">Próximo projeto</span>
+        <h3 data-pt="Landing Page Moderna" data-en="Modern Landing Page">Landing Page Moderna</h3>
+        <p
+          data-pt="Próximo projeto do portfólio: uma landing page moderna para mostrar design, layout e responsividade."
+          data-en="Next portfolio project: a modern landing page to showcase design, layout and responsiveness."
+        >
+          Próximo projeto do portfólio: uma landing page moderna para mostrar design, layout e responsividade.
+        </p>
+  
         <div class="tag-row">
           <span class="tag">HTML</span>
           <span class="tag">CSS</span>
           <span class="tag">JS</span>
         </div>
-      </div>
-      <div class="placeholder-card faded">
-        <span class="mono" data-pt="Projeto_02" data-en="Project_02">Projeto_02</span>
-        <p data-pt="Fique ligado..." data-en="Stay tuned...">Fique ligado...</p>
-        <div class="tag-row">
-          <span class="tag" data-pt="EM BREVE" data-en="TBA">EM BREVE</span>
+  
+        <div class="project-links">
+          <a href="#" class="project-btn ghost" data-pt="Em breve" data-en="Coming soon">Em breve</a>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 
