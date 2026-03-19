@@ -1,3 +1,8 @@
+# 🌐 Live Demo
+https://devbonifacio.github.io/portfolio/
+
+---
+
 # 👨‍💻 Bonifácio Jr. — Portfólio Pessoal
 
 > Site pessoal desenvolvido com HTML, CSS e JavaScript puro.
