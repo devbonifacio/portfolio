@@ -3,71 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bonifácio Jr. — Dev</title>
+  <meta name="description" content="Bonifácio Jr. — Full Stack Developer | Next.js, React, Node.js, TypeScript">
+  <meta name="author" content="Bonifácio Jr.">
+  <meta name="theme-color" content="#080a0e">
+
+  <!-- Open Graph (para compartilhamento em redes sociais) -->
+  <meta property="og:title" content="Bonifácio Jr. — Full Stack Developer">
+  <meta property="og:description" content="Desenvolvedor focado em construir sistemas reais. Atualmente estagiando num sistema hospitalar.">
+  <meta property="og:type" content="website">
+
+  <title>Bonifácio Jr. — Full Stack Developer</title>
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='monospace' font-weight='bold' fill='%237effc4'%3EB%3C/text%3E%3C/svg%3E">
+
+  <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Efeitos de fundo -->
   <div class="noise"></div>
   <div class="grid-bg"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
 
   <!-- NAV -->
   <nav>
-    <span class="nav-logo">BJ<span class="dot">.</span></span>
-  
+    <a href="#hero" class="nav-logo">BJ<span class="dot">.</span></a>
+
     <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-      ☰
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
-  
+
     <ul class="nav-links" id="navLinks">
       <li><a href="#about" data-pt="sobre" data-en="about">sobre</a></li>
+      <li><a href="#experience" data-pt="experiência" data-en="experience">experiência</a></li>
       <li><a href="#skills">skills</a></li>
       <li><a href="#projects" data-pt="projetos" data-en="projects">projetos</a></li>
       <li><a href="#contact" data-pt="contato" data-en="contact">contato</a></li>
     </ul>
-  
-    <button class="lang-toggle" id="langToggle">
-      <span class="lang-option" id="langPT">PT</span>
+
+    <button class="lang-toggle" id="langToggle" aria-label="Trocar idioma">
+      <span class="lang-option active" id="langPT">PT</span>
       <span class="lang-sep">/</span>
       <span class="lang-option" id="langEN">EN</span>
     </button>
   </nav>
 
-  <!-- HERO -->
+  <!-- ================================
+       HERO
+  ================================ -->
   <section id="hero">
     <div class="hero-label">
-      <span class="mono" data-pt="// disponível para oportunidades" data-en="// available for opportunities">// disponível para oportunidades</span>
       <span class="status-dot"></span>
+      <span class="mono" data-pt="// disponível para oportunidades" data-en="// available for opportunities">// disponível para oportunidades</span>
     </div>
+
     <h1 class="hero-title">
       <span class="line1">Bonifácio</span>
       <span class="line2">Junior<em class="accent">.</em></span>
     </h1>
-    <p class="hero-sub" data-pt="Futuro Desenvolvedor Full Stack" data-en="Full Stack Developer in the making">Futuro Desenvolvedor Full Stack</p>
-    <a href="#contact" class="cta-btn">
-      <span data-pt="Entrar em contato" data-en="Get in touch">Entrar em contato</span>
-      <span class="arrow">→</span>
-    </a>
+
+    <p class="hero-sub">
+      <span data-pt="Desenvolvedor Full Stack" data-en="Full Stack Developer">Desenvolvedor Full Stack</span>
+      <span class="hero-sub-accent" data-pt="em construção" data-en="in the making">em construção</span>
+    </p>
+
+    <p class="hero-description" data-pt="Construindo projetos reais com Next.js, React, Node.js e TypeScript. Atualmente estagiando num sistema hospitalar em produção." data-en="Building real-world projects with Next.js, React, Node.js and TypeScript. Currently interning on a production hospital system.">
+      Construindo projetos reais com Next.js, React, Node.js e TypeScript. Atualmente estagiando num sistema hospitalar em produção.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="cta-btn">
+        <span data-pt="Ver projetos" data-en="See projects">Ver projetos</span>
+        <span class="arrow">→</span>
+      </a>
+      <a href="#contact" class="cta-btn ghost">
+        <span data-pt="Entrar em contato" data-en="Get in touch">Entrar em contato</span>
+      </a>
+    </div>
+
     <div class="hero-scroll">
       <span class="mono" data-pt="rolar ↓" data-en="scroll ↓">rolar ↓</span>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ================================
+       ABOUT
+  ================================ -->
   <section id="about">
     <div class="section-tag mono" data-pt="01 / sobre" data-en="01 / about">01 / sobre</div>
+
     <div class="about-grid">
       <div class="about-text">
-        <h2 data-pt="Construindo coisas<br>que <em>importam</em>." data-en="Building things<br>that <em>matter</em>.">Construindo coisas<br>que <em>importam</em>.</h2>
-        <p data-pt="Sou um desenvolvedor de 17 anos apaixonado por transformar ideias em projetos reais. Atualmente focado em dominar o full stack — de interfaces perfeitas a sistemas back-end robustos." data-en="I'm a 17-year-old developer passionate about turning ideas into real-world projects. Currently focused on mastering the full stack — from pixel-perfect UIs to robust back-end systems.">Sou um desenvolvedor de 17 anos apaixonado por transformar ideias em projetos reais. Atualmente focado em dominar o full stack — de interfaces perfeitas a sistemas back-end robustos.</p>
-        <p data-pt="Acredito que o melhor código é ao mesmo tempo <strong>funcional</strong> e <strong>bonito</strong>." data-en="I believe the best code is both <strong>functional</strong> and <strong>beautiful</strong>.">Acredito que o melhor código é ao mesmo tempo <strong>funcional</strong> e <strong>bonito</strong>.</p>
+        <h2 data-pt="Construindo coisas<br>que <em>importam</em>." data-en="Building things<br>that <em>matter</em>.">
+          Construindo coisas<br>que <em>importam</em>.
+        </h2>
+        <p data-pt="Sou um desenvolvedor de 17 anos apaixonado por transformar ideias em projetos reais. Atualmente focado em dominar o full stack — do front-end perfeito ao back-end robusto."
+           data-en="I'm a 17-year-old developer passionate about turning ideas into real-world projects. Currently focused on mastering the full stack — from pixel-perfect UIs to robust back-ends.">
+          Sou um desenvolvedor de 17 anos apaixonado por transformar ideias em projetos reais. Atualmente focado em dominar o full stack — do front-end perfeito ao back-end robusto.
+        </p>
+        <p data-pt="Já trabalho com <strong>Next.js</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong>, <strong>MongoDB</strong> e bancos <strong>Oracle</strong>. Acredito que o melhor código é ao mesmo tempo <strong>funcional</strong> e <strong>bonito</strong>."
+           data-en="I already work with <strong>Next.js</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong>, <strong>MongoDB</strong> and <strong>Oracle</strong> databases. I believe the best code is both <strong>functional</strong> and <strong>beautiful</strong>.">
+          Já trabalho com <strong>Next.js</strong>, <strong>React</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong>, <strong>MongoDB</strong> e bancos <strong>Oracle</strong>. Acredito que o melhor código é ao mesmo tempo <strong>funcional</strong> e <strong>bonito</strong>.
+        </p>
       </div>
+
       <div class="about-card">
         <div class="card-item">
           <span class="mono label" data-pt="Idade" data-en="Age">Idade</span>
           <span class="value">17</span>
+        </div>
+        <div class="card-item">
+          <span class="mono label" data-pt="Localização" data-en="Location">Localização</span>
+          <span class="value" data-pt="Portugal" data-en="Portugal">Portugal 🇵🇹</span>
         </div>
         <div class="card-item">
           <span class="mono label" data-pt="Foco" data-en="Focus">Foco</span>
@@ -75,110 +131,422 @@
         </div>
         <div class="card-item">
           <span class="mono label">Status</span>
-          <span class="value green" data-pt="Aprendendo & Construindo" data-en="Learning & Building">Aprendendo & Construindo</span>
-        </div>
-        <div class="card-item">
-          <span class="mono label" data-pt="Objetivo" data-en="Goal">Objetivo</span>
-          <span class="value" data-pt="Dev Sênior" data-en="Senior Dev">Dev Sênior</span>
+          <span class="value green" data-pt="Estagiando & Construindo" data-en="Interning & Building">Estagiando & Construindo</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- ================================
+       EXPERIENCE
+  ================================ -->
+  <section id="experience">
+    <div class="section-tag mono" data-pt="02 / experiência" data-en="02 / experience">02 / experiência</div>
+
+    <h2 data-pt="De onde venho.<br>Para onde <em>vou</em>." data-en="Where I come from.<br>Where I'm <em>going</em>.">
+      De onde venho.<br>Para onde <em>vou</em>.
+    </h2>
+
+    <div class="timeline">
+      <!-- Estágio atual -->
+      <div class="timeline-item current">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="mono date" data-pt="2025 — Atual" data-en="2025 — Present">2025 — Atual</span>
+            <span class="badge-live" data-pt="Em atividade" data-en="Active">Em atividade</span>
+          </div>
+          <h3 data-pt="Desenvolvedor Estagiário" data-en="Developer Intern">Desenvolvedor Estagiário</h3>
+          <p class="timeline-company">Santa Casa da Misericórdia de Vila Verde (HSCMVV)</p>
+          <p class="timeline-description" data-pt="Desenvolvendo o HiSi, um sistema hospitalar em Next.js + TypeScript + Oracle para gestão de tratamentos, farmácia e módulos clínicos. Integração com sistema legado AIDA-PCE e substituição gradual de sistemas antigos."
+             data-en="Developing HiSi, a hospital system in Next.js + TypeScript + Oracle for treatment, pharmacy and clinical management. Integration with legacy AIDA-PCE system and gradual replacement of legacy systems.">
+            Desenvolvendo o <strong>HiSi</strong>, um sistema hospitalar em Next.js + TypeScript + Oracle para gestão de tratamentos, farmácia e módulos clínicos. Integração com sistema legado AIDA-PCE e substituição gradual de sistemas antigos.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Oracle DB</span>
+            <span class="tag">JWT</span>
+            <span class="tag">Cypress</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projetos pessoais -->
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="mono date">2024 — 2025</span>
+          </div>
+          <h3 data-pt="Projetos Pessoais" data-en="Personal Projects">Projetos Pessoais</h3>
+          <p class="timeline-company" data-pt="Aprendizado contínuo" data-en="Continuous learning">Aprendizado contínuo</p>
+          <p class="timeline-description" data-pt="Construindo apps full-stack em paralelo — DevMatch (React + Node + MongoDB + Socket.io), Finance-Flow (dashboard financeiro) e TaskFlow (gestão de tarefas). Foco em UI/UX premium e código limpo."
+             data-en="Building full-stack apps in parallel — DevMatch (React + Node + MongoDB + Socket.io), Finance-Flow (financial dashboard) and TaskFlow (task management). Focus on premium UI/UX and clean code.">
+            Construindo apps full-stack em paralelo — DevMatch, Finance-Flow e TaskFlow. Foco em UI/UX premium e código limpo.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Socket.io</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       SKILLS
+  ================================ -->
   <section id="skills">
-    <div class="section-tag mono">02 / skills</div>
-    <h2 data-pt="Com o que trabalho<br><em>agora</em>." data-en="What I work<br>with <em>right now</em>.">Com o que trabalho<br><em>agora</em>.</h2>
-    <div class="skills-grid">
-      <div class="skill-card" style="--i:0">
-        <div class="skill-icon">⟨/⟩</div>
-        <h3>HTML</h3>
-        <p data-pt="Estrutura semântica, acessibilidade, markup limpo." data-en="Semantic structure, accessibility, clean markup.">Estrutura semântica, acessibilidade, markup limpo.</p>
-        <div class="skill-bar"><div class="skill-fill" style="--w: 85%"></div></div>
+    <div class="section-tag mono">03 / skills</div>
+
+    <h2 data-pt="Com o que trabalho<br><em>agora</em>." data-en="What I work<br>with <em>right now</em>.">
+      Com o que trabalho<br><em>agora</em>.
+    </h2>
+
+    <div class="skills-categories">
+      <!-- FRONTEND -->
+      <div class="skill-group">
+        <h3 class="skill-group-title mono" data-pt="Frontend" data-en="Frontend">Frontend</h3>
+        <div class="skill-list">
+          <div class="skill-chip">
+            <span class="skill-icon">⚛</span>
+            <span>React</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">▲</span>
+            <span>Next.js</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">TS</span>
+            <span>TypeScript</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">JS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">✦</span>
+            <span>Tailwind CSS</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">⟨/⟩</span>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">#</span>
+            <span>CSS3</span>
+          </div>
+        </div>
       </div>
-      <div class="skill-card" style="--i:1">
-        <div class="skill-icon">✦</div>
-        <h3>CSS</h3>
-        <p data-pt="Layouts, animações, design responsivo." data-en="Layouts, animations, responsive design.">Layouts, animações, design responsivo.</p>
-        <div class="skill-bar"><div class="skill-fill" style="--w: 75%"></div></div>
+
+      <!-- BACKEND -->
+      <div class="skill-group">
+        <h3 class="skill-group-title mono" data-pt="Backend" data-en="Backend">Backend</h3>
+        <div class="skill-list">
+          <div class="skill-chip">
+            <span class="skill-icon">◈</span>
+            <span>Node.js</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">→</span>
+            <span>Express</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">🍃</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">🔮</span>
+            <span>Oracle DB</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">⚡</span>
+            <span>Socket.io</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">🔐</span>
+            <span>JWT</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">∷</span>
+            <span>REST APIs</span>
+          </div>
+        </div>
       </div>
-      <div class="skill-card" style="--i:2">
-        <div class="skill-icon">JS</div>
-        <h3>JavaScript</h3>
-        <p data-pt="Manipulação do DOM, lógica, interatividade." data-en="DOM manipulation, logic, interactivity.">Manipulação do DOM, lógica, interatividade.</p>
-        <div class="skill-bar"><div class="skill-fill" style="--w: 60%"></div></div>
+
+      <!-- TOOLS -->
+      <div class="skill-group">
+        <h3 class="skill-group-title mono" data-pt="Ferramentas" data-en="Tools">Ferramentas</h3>
+        <div class="skill-list">
+          <div class="skill-chip">
+            <span class="skill-icon">⎇</span>
+            <span>Git</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">⬡</span>
+            <span>GitHub</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">⌘</span>
+            <span>VS Code</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">▲</span>
+            <span>Vercel</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">✓</span>
+            <span>Cypress</span>
+          </div>
+          <div class="skill-chip">
+            <span class="skill-icon">📦</span>
+            <span>pnpm</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- ================================
+       PROJECTS
+  ================================ -->
   <section id="projects">
-    <div class="section-tag mono" data-pt="03 / projetos" data-en="03 / projects">03 / projetos</div>
-    <h2 data-pt="Projetos<br><em>reais</em>." data-en="Real<br><em>projects</em>.">Projetos<br><em>reais</em>.</h2>
-  
-    <div class="projects-grid">
-      <article class="project-card">
-        <span class="mono" data-pt="Projeto em destaque" data-en="Featured project">Projeto em destaque</span>
-        <h3>Portfolio Website</h3>
-        <p
-          data-pt="Meu portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro, com suporte a dois idiomas, animações e design responsivo."
-          data-en="My personal portfolio built with pure HTML, CSS and JavaScript, featuring bilingual support, animations and responsive design."
-        >
-          Meu portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro, com suporte a dois idiomas, animações e design responsivo.
-        </p>
-  
-        <div class="tag-row">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
+    <div class="section-tag mono" data-pt="04 / projetos" data-en="04 / projects">04 / projetos</div>
+
+    <h2 data-pt="Projetos<br><em>reais</em>." data-en="Real<br><em>projects</em>.">
+      Projetos<br><em>reais</em>.
+    </h2>
+
+    <!-- Filtros -->
+    <div class="project-filters" id="projectFilters">
+      <button class="filter-btn active" data-filter="all">
+        <span data-pt="Todos" data-en="All">Todos</span>
+      </button>
+      <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+      <button class="filter-btn" data-filter="frontend">Frontend</button>
+      <button class="filter-btn" data-filter="professional">
+        <span data-pt="Profissional" data-en="Professional">Profissional</span>
+      </button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- ============ HiSi - FLAGSHIP ============ -->
+      <article class="project-card flagship" data-category="fullstack professional">
+        <div class="flagship-ribbon">
+          <span class="mono" data-pt="★ DESTAQUE" data-en="★ FEATURED">★ DESTAQUE</span>
         </div>
-  
+
+        <div class="project-header">
+          <span class="mono project-type" data-pt="Estágio Profissional" data-en="Professional Internship">Estágio Profissional</span>
+          <span class="project-status live">
+            <span class="dot-live"></span>
+            <span class="mono" data-pt="Em produção" data-en="In production">Em produção</span>
+          </span>
+        </div>
+
+        <h3>HiSi — Hospital Informatics & Systems Integration</h3>
+
+        <p class="project-company">
+          <span data-pt="Santa Casa da Misericórdia de Vila Verde" data-en="Santa Casa da Misericórdia de Vila Verde">Santa Casa da Misericórdia de Vila Verde</span>
+        </p>
+
+        <p data-pt="Sistema hospitalar em Next.js + TypeScript + Oracle para gestão de tratamentos, farmácia e módulos clínicos. Integra com o sistema legado AIDA-PCE e substitui gradualmente sistemas antigos do hospital. Inclui autenticação JWT com secrets por instância, testes E2E com Cypress e múltiplos módulos (medicina, enfermagem, utilizadores)."
+           data-en="Hospital system in Next.js + TypeScript + Oracle for treatment, pharmacy and clinical module management. Integrates with the legacy AIDA-PCE system and gradually replaces old hospital systems. Features JWT authentication with per-instance secrets, E2E tests with Cypress and multiple modules (medicine, nursing, users).">
+          Sistema hospitalar em Next.js + TypeScript + Oracle para gestão de tratamentos, farmácia e módulos clínicos. Integra com o sistema legado AIDA-PCE e substitui gradualmente sistemas antigos do hospital.
+        </p>
+
+        <div class="tag-row">
+          <span class="tag primary">Next.js</span>
+          <span class="tag primary">TypeScript</span>
+          <span class="tag">Oracle DB</span>
+          <span class="tag">JWT</span>
+          <span class="tag">Cypress</span>
+        </div>
+
         <div class="project-links">
-          <a href="https://github.com/devbonifacio" target="_blank" class="project-btn">GitHub</a>
-          <a href="#" class="project-btn ghost" data-pt="Live Demo" data-en="Live Demo">Live Demo</a>
+          <a href="https://github.com/devbonifacio/HiSi-B" target="_blank" rel="noopener" class="project-btn">
+            <span>GitHub</span>
+            <span class="arrow">↗</span>
+          </a>
+          <span class="project-btn ghost disabled" data-pt="Privado (hospital)" data-en="Private (hospital)">Privado (hospital)</span>
         </div>
       </article>
-  
-      <article class="project-card">
-        <span class="mono" data-pt="Próximo projeto" data-en="Next project">Próximo projeto</span>
-        <h3 data-pt="Landing Page Moderna" data-en="Modern Landing Page">Landing Page Moderna</h3>
-        <p
-          data-pt="Próximo projeto do portfólio: uma landing page moderna para mostrar design, layout e responsividade."
-          data-en="Next portfolio project: a modern landing page to showcase design, layout and responsiveness."
-        >
-          Próximo projeto do portfólio: uma landing page moderna para mostrar design, layout e responsividade.
-        </p>
-  
-        <div class="tag-row">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JS</span>
+
+      <!-- ============ DevMatch Platform ============ -->
+      <article class="project-card" data-category="fullstack">
+        <div class="project-header">
+          <span class="mono project-type" data-pt="Full Stack" data-en="Full Stack">Full Stack</span>
         </div>
-  
+
+        <h3>DevMatch Platform</h3>
+
+        <p data-pt="Plataforma onde programadores encontram parceiros para colaborar em projetos. Sistema de match automático, chat em tempo real com Socket.io, autenticação JWT e perfil completo (bio, stack, GitHub). Backend em Node.js + Express + MongoDB."
+           data-en="Platform where developers find partners to collaborate on projects. Automatic match system, real-time chat with Socket.io, JWT authentication and full profiles (bio, stack, GitHub). Backend in Node.js + Express + MongoDB.">
+          Plataforma onde programadores encontram parceiros para colaborar em projetos. Sistema de match automático, chat em tempo real com Socket.io, autenticação JWT e perfil completo.
+        </p>
+
+        <div class="tag-row">
+          <span class="tag primary">React</span>
+          <span class="tag primary">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Socket.io</span>
+          <span class="tag">JWT</span>
+        </div>
+
         <div class="project-links">
-          <a href="#" class="project-btn ghost" data-pt="Em breve" data-en="Coming soon">Em breve</a>
+          <a href="https://github.com/devbonifacio/devmatch-platform" target="_blank" rel="noopener" class="project-btn">
+            <span>GitHub</span>
+            <span class="arrow">↗</span>
+          </a>
         </div>
       </article>
+
+      <!-- ============ Finance-Flow ============ -->
+      <article class="project-card" data-category="frontend">
+        <div class="project-header">
+          <span class="mono project-type">Frontend</span>
+        </div>
+
+        <h3>FinanceFlow Pro</h3>
+
+        <p data-pt="Dashboard financeiro premium com gráficos dinâmicos (Chart.js), filtros por categoria, busca, export CSV, suporte PT/EN, dark mode e persistência via localStorage. Design limpo e moderno pronto para portfolio."
+           data-en="Premium finance dashboard with dynamic charts (Chart.js), category filters, search, CSV export, PT/EN support, dark mode and localStorage persistence. Clean modern design ready for portfolio.">
+          Dashboard financeiro premium com gráficos dinâmicos (Chart.js), filtros por categoria, busca, export CSV, suporte PT/EN e dark mode.
+        </p>
+
+        <div class="tag-row">
+          <span class="tag primary">JavaScript</span>
+          <span class="tag">Chart.js</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">localStorage</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/devbonifacio/Finance-Flow" target="_blank" rel="noopener" class="project-btn">
+            <span>GitHub</span>
+            <span class="arrow">↗</span>
+          </a>
+          <a href="https://devbonifacio.github.io/Finance-Flow/" target="_blank" rel="noopener" class="project-btn ghost">
+            <span>Live Demo</span>
+            <span class="arrow">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============ TaskFlow ============ -->
+      <article class="project-card" data-category="frontend">
+        <div class="project-header">
+          <span class="mono project-type">Frontend</span>
+        </div>
+
+        <h3>TaskFlow</h3>
+
+        <p data-pt="App de gestão de tarefas com UI premium. Add/edit/delete de tarefas, filtros (todas/completas/pendentes), persistência em localStorage e design totalmente responsivo. Focado em UX limpa e interações suaves."
+           data-en="Task management app with premium UI. Add/edit/delete tasks, filters (all/completed/pending), localStorage persistence and fully responsive design. Focused on clean UX and smooth interactions.">
+          App de gestão de tarefas com UI premium. Filtros, persistência em localStorage e design totalmente responsivo.
+        </p>
+
+        <div class="tag-row">
+          <span class="tag primary">JavaScript</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">localStorage</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/devbonifacio/taskflow-todo-app" target="_blank" rel="noopener" class="project-btn">
+            <span>GitHub</span>
+            <span class="arrow">↗</span>
+          </a>
+          <a href="https://devbonifacio.github.io/taskflow-todo-app/" target="_blank" rel="noopener" class="project-btn ghost">
+            <span>Live Demo</span>
+            <span class="arrow">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============ Portfolio ============ -->
+      <article class="project-card" data-category="frontend">
+        <div class="project-header">
+          <span class="mono project-type">Frontend</span>
+        </div>
+
+        <h3 data-pt="Portfolio Pessoal" data-en="Personal Portfolio">Portfolio Pessoal</h3>
+
+        <p data-pt="Este site que você está vendo. HTML, CSS e JavaScript puro, com suporte PT/EN, animações suaves, filtros de projetos, design responsivo e atenção a cada detalhe."
+           data-en="This very site you're looking at. Pure HTML, CSS and JavaScript, with PT/EN support, smooth animations, project filters, responsive design and attention to every detail.">
+          Este site que você está vendo. HTML, CSS e JavaScript puro, com animações, filtros e atenção a cada detalhe.
+        </p>
+
+        <div class="tag-row">
+          <span class="tag primary">HTML</span>
+          <span class="tag primary">CSS</span>
+          <span class="tag primary">JavaScript</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/devbonifacio/portfolio" target="_blank" rel="noopener" class="project-btn">
+            <span>GitHub</span>
+            <span class="arrow">↗</span>
+          </a>
+        </div>
+      </article>
+
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ================================
+       CONTACT
+  ================================ -->
   <section id="contact">
-    <div class="section-tag mono" data-pt="04 / contato" data-en="04 / contact">04 / contato</div>
+    <div class="section-tag mono" data-pt="05 / contato" data-en="05 / contact">05 / contato</div>
+
     <div class="contact-inner">
-      <h2 data-pt="Vamos construir<br>algo juntos<em>.</em>" data-en="Let's build<br>something<em>.</em>">Vamos construir<br>algo juntos<em>.</em></h2>
-      <p data-pt="Tem um projeto em mente ou só quer trocar uma ideia? Manda uma mensagem." data-en="Have a project in mind or just want to connect? Drop me a message.">Tem um projeto em mente ou só quer trocar uma ideia? Manda uma mensagem.</p>
+      <h2 data-pt="Vamos construir<br>algo juntos<em>.</em>" data-en="Let's build<br>something together<em>.</em>">
+        Vamos construir<br>algo juntos<em>.</em>
+      </h2>
+
+      <p class="contact-description" data-pt="Tem um projeto em mente, uma vaga de estágio ou só quer trocar uma ideia sobre código? Manda um email, respondo rápido." data-en="Got a project in mind, an internship opening or just want to talk code? Drop an email, I reply fast.">
+        Tem um projeto em mente, uma vaga de estágio ou só quer trocar uma ideia sobre código? Manda um email, respondo rápido.
+      </p>
+
       <a href="mailto:juninholeal9882@gmail.com" class="email-link">
         <span class="mono">juninholeal9882@gmail.com</span>
         <span class="arrow-big">↗</span>
       </a>
+
+      <div class="contact-socials">
+        <a href="https://github.com/devbonifacio" target="_blank" rel="noopener" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.72-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.57 21.79 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:juninholeal9882@gmail.com" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="M22 7l-10 7L2 7"/>
+          </svg>
+          <span>Email</span>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ================================
+       FOOTER
+  ================================ -->
   <footer>
-    <span class="mono">© 2025 Bonifácio Jr.</span>
-    <span class="mono faded" data-pt="Feito com HTML, CSS & JS" data-en="Built with HTML, CSS & JS">Feito com HTML, CSS & JS</span>
+    <div class="footer-inner">
+      <span class="mono" id="footerYear">© 2026 Bonifácio Jr.</span>
+      <span class="mono faded" data-pt="Feito com HTML, CSS & JS" data-en="Built with HTML, CSS & JS">Feito com HTML, CSS & JS</span>
+    </div>
   </footer>
 
   <script src="script.js"></script>
