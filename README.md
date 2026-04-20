@@ -1,4 +1,4 @@
-# 👨‍💻 Bonifácio Jr. — Portfólio Pessoal
+# 🌐 Portfolio — Bonifácio Jr.
 
 > Meu portfólio pessoal. Construído com HTML, CSS e JavaScript puro — sem frameworks.
 
